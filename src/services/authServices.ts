@@ -1,6 +1,6 @@
 import { JWT_EXPIRATION, JWT_SECRET } from "../config/jwt";
-import { IUserModel } from "../models/UserModel";
 import UserRepository from "../repositories/user.repository";
+import { IUserModel } from "../types/IUserModel";
 import { comparePassword, hashPassword } from "../utils/hashUtils";
 import jwt from "jsonwebtoken";
 

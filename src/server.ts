@@ -2,12 +2,13 @@ import express from 'express';
 import connectDB from './config/database';
 import dotenv from 'dotenv';
 import authRoute from './routes/authRoute';
+import { initializeCounter } from './config/trackingCounter';
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT ?? 5000;
 
 connectDB();
-
+initializeCounter()
 app.use(express.json());
 app.use('/auth', authRoute)
 

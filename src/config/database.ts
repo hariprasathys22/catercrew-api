@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import Counter from "../models/CounterModel";
 
 dotenv.config();
 const connectDB = async () => {
@@ -16,4 +17,5 @@ const connectDB = async () => {
     process.exit(1);
   }
 };
+
 export default connectDB;
