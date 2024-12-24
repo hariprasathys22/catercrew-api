@@ -1,10 +1,11 @@
-import Counter from "../models/CounterModel";
+import CounterModel from "../models/CounterModel";
+
 
 export const generateTrackingId = async (): Promise<string> => {
   const prefix = "ORDER";
 
   try {
-    const counter = await Counter.findOneAndUpdate(
+    const counter = await CounterModel.findOneAndUpdate(
       {
         name: "trackingId",
       },

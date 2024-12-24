@@ -4,6 +4,7 @@ export interface IEventModel extends Document{
     user_id: mongoose.Types.ObjectId;
     tracking_id: string;
     eventType: string;
+    name: string;
     foodType: string;
     anyReq: string; 
     shiftMorning: string;

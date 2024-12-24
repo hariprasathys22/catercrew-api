@@ -11,6 +11,7 @@ const Events = new Schema<IEventModel>({
     anyReq: { type: String, required: true },
     shiftMorning: { type: String, required: true },
     shiftAfternoon: { type: String, required: true },
+    name: { type: String, required: true },
     shiftNight: { type: String, required: true },
     date: { type: Date, required: true },
     noOfEmployee: { type: Number, required: true },
